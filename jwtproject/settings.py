@@ -31,7 +31,7 @@ DEBUG = False # for production
 # ALLOWED_HOSTS = []
 ALLOWED_HOSTS = ["*"]  # Change this later for security
 
-DATABASES_URL = "mysql://root:lXcXkbCDpSXrnMDAiySPTHsEskGaSfMF@switchback.proxy.rlwy.net:17769/railway"
+DATABASE_URL = "mysql://root:lXcXkbCDpSXrnMDAiySPTHsEskGaSfMF@switchback.proxy.rlwy.net:17769/railway"
 
 
 # Application definition
@@ -87,9 +87,9 @@ WSGI_APPLICATION = 'jwtproject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': os.getenv('MYSQL_DATABASE', 'jwtauthdb'),
+        'NAME': os.getenv('MYSQL_DATABASE', 'jwtauth'),
         'USER': os.getenv('MYSQL_USER', 'root'),
-        'PASSWORD': os.getenv('MYSQL_PASSWORD', 'root_password'),
+        'PASSWORD': os.getenv('MYSQL_PASSWORD', 'root'),
         'HOST': os.getenv('MYSQL_HOST', 'localhost'),
         'PORT': os.getenv('MYSQL_PORT', '3306'),
     }
