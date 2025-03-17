@@ -33,6 +33,8 @@ ALLOWED_HOSTS = ["*"]  # Change this later for security
 
 DATABASE_URL = "mysql://root:lXcXkbCDpSXrnMDAiySPTHsEskGaSfMF@switchback.proxy.rlwy.net:17769/railway"
 
+# mysql://${{MYSQLUSER}}:${{MYSQL_ROOT_PASSWORD}}@${{RAILWAY_TCP_PROXY_DOMAIN}}:${{RAILWAY_TCP_PROXY_PORT}}/${{MYSQL_DATABASE}}
+
 
 # Application definition
 
@@ -90,7 +92,7 @@ DATABASES = {
         'NAME': 'railway',
         'USER': 'root',
         'PASSWORD': 'lXcXkbCDpSXrnMDAiySPTHsEskGaSfMF',
-        'HOST': 'RAILWAY_PRIVATE_DOMAIN',
+        'HOST': 'switchback.proxy.rlwy.net',
         'PORT': '3306',
     }
 }
