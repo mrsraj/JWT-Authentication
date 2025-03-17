@@ -1,1 +1,1 @@
-web: gunicorn jwtproject.wsgi --bind 0.0.0.0:$PORT
+web: gunicorn jwtproject.wsgi
