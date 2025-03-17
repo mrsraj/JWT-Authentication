@@ -87,11 +87,11 @@ WSGI_APPLICATION = 'jwtproject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': os.getenv('MYSQL_DATABASE', 'jwtauth'),
-        'USER': os.getenv('MYSQL_USER', 'root'),
-        'PASSWORD': os.getenv('MYSQL_PASSWORD', 'root'),
-        'HOST': os.getenv('MYSQL_HOST', 'localhost'),
-        'PORT': os.getenv('MYSQL_PORT', '3306'),
+        'NAME': 'railway',
+        'USER': 'root',
+        'PASSWORD': 'lXcXkbCDpSXrnMDAiySPTHsEskGaSfMF',
+        'HOST': 'RAILWAY_PRIVATE_DOMAIN',
+        'PORT': '3306',
     }
 }
 
