@@ -31,6 +31,8 @@ DEBUG = False # for production
 # ALLOWED_HOSTS = []
 ALLOWED_HOSTS = ["*"]  # Change this later for security
 
+DATABASES_URL = "mysql://root:lXcXkbCDpSXrnMDAiySPTHsEskGaSfMF@switchback.proxy.rlwy.net:17769/railway"
+
 
 # Application definition
 
